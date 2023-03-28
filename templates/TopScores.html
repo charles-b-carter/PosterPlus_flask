@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+    <title>
+        GSU Poster - Top Scores
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/Dashboard.css') }}">
+    <link rel = "icon" type = "image/x-icon" href = "/images/Panther.png">
+</head>
+
+    <body>
+        <div class = "container">
+            <h1>Hello!<br>Check out these TOP SCORES from your fellow students.</h1>
+        </div>
+        <div class = "container2">
+<!--            <div class = "portion2"><a href="Rubric.html" target=""><button type="button">Rubric</button></a></button></div> <!-- /src/UI/html/Rubric.html -->
+            <div class = "portion1"><button type="button" onclick="history.back()">Back to your Dashboard</button></div> <!-- /src/UI/html/TopScores.html -->
+            <div class = "portion3"><a href="login.html"><button type="button">Logout</button></a></button></div>
+        </div>
+        <div class = "TopScores">
+            These are the students with the best posters: 
+            <div class = "StudentScores">
+                <table>
+                    <tr>
+                        <th>Student</th>
+                        <th>Grade</th>
+                        <th>Rank</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>7/10</td>
+                        <td>#1</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>6/10</td>
+                        <td>#2</td>
+                    </tr>
+                    <tr>
+                        <td>Unknown</td>
+                        <td>5/10</td>
+                        <td>#3</td>
+                    </tr>
+            </div>
+        </div>
+    </body>
+</html>

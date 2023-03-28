@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+    <title>
+        GSU Poster - Rubric
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/Dashboard.css') }}">
+    <link rel = "icon" type = "image/x-icon" href = "/images/Panther.png">
+</head>
+
+    <body>
+        <div class = "container">
+            <h1>Hello!<br>These are the grading criteria the Judges will follow. <br>Read closely for the best score!</h1>
+        </div>
+        <div class = "container2">
+<!--            <div class = "portion2"><a href="TopScores.html" target=""><button type="button">Top Scores</button></a></button></div> <!-- /src/UI/html/Rubric.html -->
+            <div class = "portion1"><button type="button" onclick="history.back()">Back to your Dashboard</button></a></div> <!-- /src/UI/html/TopScores.html -->
+            <div class = "portion3"><a href="login.html"><button type="button">Logout</button></a></button></div>
+        </div>
+        <div class = "Rubric">
+            The grading criteria are: <br>
+            Student was able to answer all questions presented by the judge. .... 1-10<br>
+            Student gave an interactive and engaging presentation .... 1-10<br>
+            Student's content was correct .... 1-10<br>
+            Student's poster was creative, rich, and colorful .... 1-10<br><br>
+            The total is out of 40 points, divided by 4 categories, to create an average score out of 10.
+        </div>
+    </body>
+</html>

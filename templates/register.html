@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+	<head>
+		<title>GSU Poster - Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/login.css') }}">
+        <link rel = "icon" type = "image/x-icon" href = "images/Panther.png">
+	</head>
+	
+	<body>
+        <img src="images/logo.png" alt="logo" width="200"height="200">
+		<div class = "container">
+			<div class = "container2">
+				<h2>
+					I am a:<br>
+					<input type = "radio" id = "student" name = "occupation">
+					<label for = "student">Student</label>
+					<input type = "radio" id = "judge" name = "occupation">
+					<label for = "judge">Judge</label><br>
+					
+					<label for = "Name">Name</label><br>
+					<input type = "text" id = "Name" name = "Name" placeholder = "Your Name"><br>
+					
+					<label for = "Username">Username</label><br>
+					<input type = "text" id = "Username" name = "Username" placeholder = "Your Username"><br>
+					
+					<label for = "Password">Password</label><br>
+					<input type = "password" id = "Password" name = "Password" placeholder = "Your Password"><br>
+					
+					<label for = "Confirm">Confirm Password</label><br>
+					<input type = "password" id = "Confirm" name = "Confirm" placeholder = "Your Password"><br>
+				</h2>
+				
+				<h1>
+					<a href="login.html"><button type = "button">Create new account</a>
+				</h1>
+				
+			</div>
+		</div>
+	</body>
+</html> 

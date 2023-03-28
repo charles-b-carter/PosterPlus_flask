@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+    <title>
+        GSU Poster - Judge Grading
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/JudgeGrading.css') }}">
+    <link rel = "icon" type = "image/x-icon" href = "/images/Panther.png">
+</head>
+
+    <body>
+        <div class = "container1">
+<!--            <div class = "portion1"><a href="TopScores.html" target=""><button type="button">Top Scores</button></a></div> <!-- /src/UI/html/TopScores.html -->
+<!--            <div class = "portion2"><a href="Rubric.html" target=""><button type="button">Rubric</button></a></button></div> <!-- /src/UI/html/Rubric.html -->
+            <div class = "portion3"><a href="JudgeLanding.html" target=""><button type="button">Back to Dashboard</button></a></button></div>
+            <div class = "portion4"><a href="login.html"><button type="button">Logout</button></a></button></div>
+        </div>
+
+            <div class = "part1">
+				The grading criteria are: <br>
+				Student was able to answer all questions presented by the judge. .... 1-10<br>
+				Student gave an interactive and engaging presentation .... 1-10<br>
+				Student's content was correct .... 1-10<br>
+				Student's poster was creative, rich, and colorful .... 1-10<br><br>
+				The total is out of 40 points, divided by 4 categories, to create an average score out of 10.<br>
+			</div>
+            <div class="dropdown">
+                <button class="dropbtn">Pick a Student 🢃</button>
+                <div class="dropdown-content">
+                    <a href="#">Student 1</a>
+                    <a href="#">Student 2</a>
+                    <a href="#">Student 3</a>
+				</div>
+			</div>
+				
+            <div class = "Poster">
+                <div class = "PosterImage">
+                    STUDENT POSTER PLACEHOLDER
+                </div>
+            </div>
+            <div class = "rateInput">
+				<input type = "number" id = "ID" name = "ID" pattern="[1-10]" placeholder = "Enter Your Score 1-10"><br>
+            </div>
+            <div class = "rateSubmit">
+                <button type="submit" name="button" id="button"> Submit</button>
+            </div>
+
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>  
+    </body>
+</html>
